@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://ns.adobe.com/acrobat/workflow/2012" title="限制文档编辑" description="" majorVersion="1" minorVersion="0">
+	<Sources defaultCommand="WorkflowPlaybackSelectFile"/>
+	<Group label="限制编辑和更改">
+		<Command name="DocSecurity" pauseBefore="false" promptUser="true">
+			<Items>
+				<Item name="CryptHandler" type="atom" value="Standard"/>
+				<Items name="SecuritySettings">
+					<Item name="EncryptAttachmentsOnly" type="boolean" value="false"/>
+					<Item name="EncryptionMethod" type="integer" value="6"/>
+					<Item name="HasOwnerPW" type="boolean" value="true"/>
+					<Item name="HasUserPW" type="boolean" value="false"/>
+					<Item name="KeyLength" type="integer" value="16"/>
+					<Item name="OwnerPW" type="string" value="ELEreport@2023"/>
+					<Item name="PDPerms" type="integer" value="2564"/>
+					<Item name="PlaintextMetadata" type="boolean" value="false"/>
+					<Item name="Revision" type="integer" value="4"/>
+					<Item name="Version" type="integer" value="4"/>
+				</Items>
+			</Items>
+		</Command>
+	</Group>
+</Workflow>
